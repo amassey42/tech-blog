@@ -1,9 +1,13 @@
 body {
-    background: #D3D3D3;
+    background: #545454;
 }
 .marginleft {
     margin: 2%;
 }
 a {
     text-decoration: none;
+}
+.delBtn {
+    width: fit-content;
+    margin: 0 auto;
 }

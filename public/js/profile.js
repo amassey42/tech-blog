@@ -20,3 +20,21 @@ projectForm.addEventListener("submit",e=>{
         }
     })
 })
+
+// const delButtons = document.querySelectorAll(".delBtn");
+
+// delButtons.forEach(delBtn=>{
+//     delBtn.addEventListener("click",e=>{
+//         const postId = e.target.getAttribute("data-postId")
+//         console.log(postId);
+//         fetch(`/api/posts/${postId}`,{
+//             method:"DELETE"
+//         }).then(res=>{
+//             if(res.ok){
+//                 location.reload();
+//             } else {
+//                 alert("trumpet sound")
+//             }
+//         })
+//     })
+// })
