@@ -2,9 +2,12 @@ const User = require("./user");
 const Post = require("./post");
 const Comment = require("./comment");
 
+
 //user has many posts but a post belongs to one user
 User.hasMany(Post, {
-    onDelete: "CASCADE"
+    foreignKey: "user_id",
+    onDelete: "CASCADE",
+   
 });
 Post.belongsTo(User);
 

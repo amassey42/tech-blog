@@ -1,0 +1,21 @@
+<h1 class="text-center">Welcome {{username}}</h1>
+
+<h2 class="marginleft">Add a Post</h2>
+<form action="" id="addPost" class="marginleft">
+    <input type="text" name="postTitle" id="postTitle" placeholder="Title">
+     <input type="text" name="postBody" id="postBody" placeholder="Body">
+     <button>Add Post!</button>
+</form>
+
+<h2 class="text-center">My Posts!</h2>
+
+{{#each posts}}
+<div class="card marginleft">
+    <a href="/post/{{id}}"><h3>{{title}}</h3></a>
+    <p>{{body}}</p>
+    <p>Created on {{date}}</p>
+</div>
+
+{{/each}}
+
+<script src="/js/profile.js"></script>

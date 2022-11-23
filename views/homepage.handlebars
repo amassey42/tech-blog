@@ -1,0 +1,11 @@
+<h1 class="text-center">homepage</h1>
+<h2 class="text-center">All Posts</h2>
+{{#each posts}}
+<div class="card marginleft">
+    <a href="/post/{{id}}"><h3>{{title}}</h3></a>
+    <p>{{body}}</p>
+    <p>Created on {{date}}</p>
+</div>
+
+
+{{/each}}

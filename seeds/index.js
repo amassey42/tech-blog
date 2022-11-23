@@ -21,35 +21,35 @@ const seed = async ()=> {
         {
             title: "JavaScript",
             body: "It is my favorite language",
-            userId: 2
+            user_id: 2
         },
         {
             title: "CSS",
             body: "Css makes the page look pretty",
-            userId: 2
+            user_id: 2
         },
         {
             title: "HTML",
             body: "I'm an HTML wizard'",
-            userId: 1
+            user_id: 1
         },
     ])
 
     const comments = await Comment.bulkCreate([
         {
             comment_body:"That is my favorite too!",
-            userId: 1,
-            postId:1
+            user_id: 1,
+            post_id:1
         },
         {
-            comment_body:"A wizard? Awesome",
-            userId: 2,
-            postId:3
+            comment_body:"A wizard? Awesome!",
+            user_id: 2,
+            post_id:3
         },
         {
             comment_body:"I dont like writting CSS",
-            userId: 1,
-            postId:2
+            user_id: 1,
+            post_id:2
         },
     ])
     console.log("data seeded")

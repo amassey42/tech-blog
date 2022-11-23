@@ -11,6 +11,12 @@ class User extends Model {
 //user has a unique username and password
 User.init(
     {
+      id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true,
+      },
         username: {
             type: DataTypes.STRING,
             unique: true,
@@ -38,6 +44,10 @@ User.init(
           },
         },
         sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'user',
       }
 )
 module.exports = User;
